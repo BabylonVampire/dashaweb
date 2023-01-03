@@ -1,0 +1,12 @@
+#upButton {
+    bottom: 0;
+    right: 2em;
+    position: fixed;
+    width: 100px;
+    height: 200px;
+    background-image: url(../pics/upButton.png);
+    background-position: center center;      
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    cursor: pointer;  
+}

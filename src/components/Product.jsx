@@ -1,0 +1,32 @@
+import * as React from 'react';
+import "../styles/Product.css";
+import { Box } from '@mui/material';
+
+const Product = ({ name, description, price, img }) => {
+  return (
+    <Box
+      className='product'
+      sx={{
+        height: {lg: `300px`, md: `300px`, sm: `275px`, xs: `275px`},
+        backgroundSize: {lg: `650px 325px`, md: `650px 325px`, sm: `500px 260px`, xs: `475px 250px`},
+        width: {lg: `700px`, md: `700px`, sm: `450px`, xs: `auto`},
+      }}
+    >
+      <img
+        className='prodImg'
+        src={img}
+        style={{maxHeight: '300px', maxWidth: '300px'}}
+      />
+      <div className='textBox'>
+        <p className='h2'>
+          {name}
+        </p>
+        <p className='h3'>
+          {description}
+        </p>
+      </div>
+    </Box>
+  );
+}
+
+export default Product;
