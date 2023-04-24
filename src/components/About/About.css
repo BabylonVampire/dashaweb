@@ -1,13 +1,14 @@
-#aboutBack {
+.aboutBack {
     width: 500px;
     height: 500px;
-    background-image: url(../pics/about.png);
+    background-image: url(../../pics/about.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 500px 500px;
+    filter: sepia(0.4) drop-shadow(2px 4px 6px black) grayscale(0.5);
 }
 
-#aboutTextField {
+.aboutTextField {
     margin: auto;
     width: 300px;
     height: 400px;

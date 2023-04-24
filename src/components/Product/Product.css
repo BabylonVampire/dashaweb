@@ -1,9 +1,10 @@
 .product {
     display: flex;
     padding: 30px;
-    background-image: url(../pics/productCard.png);
-    background-position: center center;      
+    background-image: url(../../pics/productCard.png);
+    background-position: center center;
     background-repeat: no-repeat;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .prodImg {
@@ -13,6 +14,7 @@
     position: relative;
     right: -17px;
     bottom: -27px;
+    filter: sepia() saturate(0.5);
 }
 
 .textBox {
@@ -30,15 +32,18 @@
     .prodImg {
         right: 55px;
     }
+
     .textBox {
         right: 125px;
     }
 
 }
+
 @media (min-width: 0px) and (max-width: 600px) {
     .prodImg {
         right: 75px;
     }
+
     .textBox {
         right: 160px;
     }

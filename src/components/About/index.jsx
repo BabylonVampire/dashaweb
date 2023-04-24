@@ -1,9 +1,9 @@
-import "../styles/About.css";
+import "./About.css";
 
 const About = ({ description }) => {
     return (
-        <div id="aboutBack">
-            <div id="aboutTextField">
+        <div className="aboutBack">
+            <div className="aboutTextField">
                 <p className="h3">
                     {description}
                 </p>

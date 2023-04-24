@@ -42,7 +42,7 @@ head {
 }
 
 .generalBox {
-    background-image: url(../pics/back.jpg);
+    background-image: url(../../pics/back.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -80,5 +80,5 @@ head {
 
 @font-face {
     font-family: 'blackAndWhitePicture';
-    src: url(../fonts/BlackAndWhitePictureCyrillic/black-and-white-picture-cyrillic.otf);
+    src: url(../../fonts/BlackAndWhitePictureCyrillic/black-and-white-picture-cyrillic.otf);
 }

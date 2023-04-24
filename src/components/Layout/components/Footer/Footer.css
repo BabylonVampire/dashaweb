@@ -1,4 +1,4 @@
-#footer {
+.footer {
     background-color: rgb(50, 50, 50);
     height: 100px;
     width: 100%;
@@ -7,7 +7,7 @@
     justify-content: space-evenly;
 }
 
-#footer > * {
+.footer>* {
     background-color: rgb(50, 50, 50);
-    color: white;
+    color: #fff;
 }

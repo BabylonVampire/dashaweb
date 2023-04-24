@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/Header.css';
+import './Header.css';
 import { createTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
@@ -43,7 +43,7 @@ function DrawerAppBar({ header, window, navButtons }) {
             <p className="h2">
                 {header}
             </p>
-            <Divider style={{ backgroundColor: '#000' }} />
+            <Divider className="divider" />
             <List>
                 {navButtons.map((item) => {
                     return (
@@ -52,8 +52,9 @@ function DrawerAppBar({ header, window, navButtons }) {
                             disablePadding
                         >
                             <ListItemButton
-                                sx={{ textAlign: 'center' }}
-                            // якорь!
+                                sx={{
+                                    textAlign: 'center'
+                                }}
                             >
                                 <ListItemText primary={item.name} />
                             </ListItemButton>
@@ -70,12 +71,10 @@ function DrawerAppBar({ header, window, navButtons }) {
         <Box sx={{ display: 'flex' }}>
             <AppBar
                 component="nav"
-                style={{
+                sx={{
                     backgroundColor: '#61815d',
                     display: 'flex',
-                    color: '#000'
-                }}
-                sx={{
+                    color: '#000',
                     alignItems: {
                         xs: 'flex-start',
                         sm: 'flex-start',
@@ -90,7 +89,13 @@ function DrawerAppBar({ header, window, navButtons }) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 1, display: { md: 'block', lg: 'none' } }}
+                        sx={{
+                            mr: 1,
+                            display: {
+                                md: 'block',
+                                lg: 'none'
+                            }
+                        }}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -118,7 +123,6 @@ function DrawerAppBar({ header, window, navButtons }) {
                                     }}
                                     theme={mainTheme}
                                     className='anchorLink'
-                                // якорь!
                                 >
                                     {item.name}
                                 </Button>
@@ -138,7 +142,11 @@ function DrawerAppBar({ header, window, navButtons }) {
                         keepMounted: true
                     }}
                     sx={{
-                        display: { xs: 'block', sm: 'block', md: 'block' },
+                        display: {
+                            xs: 'block',
+                            sm: 'block',
+                            md: 'block'
+                        },
                         '& .MuiDrawer-paper': {
                             boxSizing: 'border-box',
                             width: drawerWidth,

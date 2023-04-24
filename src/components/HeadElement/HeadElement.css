@@ -1,7 +1,7 @@
-#headElement {
+.headElement {
     width: 100%;
     height: 350px;
-    background-image: url(../pics/label.jpg);
+    background-image: url(../../pics/label.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

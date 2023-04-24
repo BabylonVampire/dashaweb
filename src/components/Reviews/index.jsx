@@ -1,42 +1,26 @@
 import React from 'react';
-import "../styles/Reviews.css";
+import "./Reviews.css";
 import { Grid, Card, Typography, CardContent } from '@mui/material';
 
 const Reviews = ({ content }) => {
     return (
         <Grid
+            className='reviews element-animation'
             item
-            id='reviews'
             container
             spacing={2}
-            style={{
-                marginTop: "0px",
-                width: "100%",
-                marginLeft: "0px"
-            }}
         >
             {content.map(review => {
                 return (
                     <Grid
+                        className='reviewsBox'
                         item
                         key={`reviews${content.indexOf(review)}`}
                         xs={12}
                         sm={6}
                         md={3}
-                        style={{
-                            paddingLeft: '0',
-                            paddingTop: '0',
-                            paddingBottom: '20px'
-                        }}
                     >
-                        <Card 
-                            style={{
-                                display: 'block',
-                                flexDirection: 'column',
-                                textAlign: 'center',
-                                boxShadow: 'none'
-                            }}
-                        >
+                        <Card className='reviewCard'>
                             <CardContent className='review'>
                                 <Typography
                                     gutterBottom
@@ -45,9 +29,7 @@ const Reviews = ({ content }) => {
                                 >
                                     {review.username}
                                 </Typography>
-                                <Typography
-                                    variant="h6"
-                                >
+                                <Typography variant="h6">
                                     {review.text}
                                 </Typography>
                             </CardContent>

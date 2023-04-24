@@ -1,4 +1,4 @@
-import "../styles/UpButton.css";
+import "./UpButton.css";
 import { Box } from "@mui/material";
 
 const UpButton = () => {
