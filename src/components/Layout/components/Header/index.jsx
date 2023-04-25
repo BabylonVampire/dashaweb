@@ -51,11 +51,7 @@ function DrawerAppBar({ header, window, navButtons }) {
                             key={item.name}
                             disablePadding
                         >
-                            <ListItemButton
-                                sx={{
-                                    textAlign: 'center'
-                                }}
-                            >
+                            <ListItemButton sx={{ textAlign: 'center' }}>
                                 <ListItemText primary={item.name} />
                             </ListItemButton>
                         </ListItem>
@@ -114,18 +110,13 @@ function DrawerAppBar({ header, window, navButtons }) {
                     >
                         {navButtons.map((item) => {
                             return (
-                                <Button
-                                    variant='contained'
+                                <button
+                                    variant='text'
                                     key={`button${navButtons.indexOf(item)}`}
-                                    sx={{
-                                        mx: 0.7,
-                                        height: '3em'
-                                    }}
-                                    theme={mainTheme}
                                     className='anchorLink'
                                 >
                                     {item.name}
-                                </Button>
+                                </button>
                             )
                         })
                         }
