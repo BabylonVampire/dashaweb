@@ -4,7 +4,6 @@ import { createTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
-import Button from '@mui/material/Button';
 import AppBar from '@mui/material/AppBar';
 import Drawer from '@mui/material/Drawer';
 import Divider from '@mui/material/Divider';
@@ -111,9 +110,11 @@ function DrawerAppBar({ header, window, navButtons }) {
                         {navButtons.map((item) => {
                             return (
                                 <button
-                                    variant='text'
-                                    key={`button${navButtons.indexOf(item)}`}
                                     className='anchorLink'
+                                    key={`button${navButtons.indexOf(item)}`}
+                                    // onClick={
+                                    //     location.hash = `#${item.link}`
+                                    // }
                                 >
                                     {item.name}
                                 </button>

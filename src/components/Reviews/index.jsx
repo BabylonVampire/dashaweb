@@ -9,6 +9,9 @@ const Reviews = ({ content }) => {
             item
             container
             spacing={2}
+            sx={{
+                mb: '1em'
+            }}
         >
             {content.map(review => {
                 return (

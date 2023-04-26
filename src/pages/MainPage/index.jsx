@@ -7,6 +7,7 @@ import HeadElement from "../../components/HeadElement";
 import About from "../../components/About";
 import Reviews from "../../components/Reviews";
 import Layout from "../../components/Layout";
+import Links from "../../components/Links";
 
 const MainPage = () => {
     return (
@@ -30,6 +31,8 @@ const MainPage = () => {
                     <ProductBox />
                     <Heading tytle="Отзывы" />
                     <Reviews content={[{ username: "123", text: "123" }]} />
+                    <Heading tytle="Ссылочки" />
+                    <Links links={[{description: 'vk', link: '', source: 'VK'}, {description: 'wu', link: '', source: 'WU'}, {description: 'tg', link: '', source: 'TG'}]}/>
                 </Grid>
             </div>
         </Layout>

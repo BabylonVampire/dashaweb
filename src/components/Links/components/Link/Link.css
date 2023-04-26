@@ -1,0 +1,41 @@
+.linkImg {
+    width: 100px;
+    height: 133px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70px 133px;
+    cursor: pointer;
+}
+
+.linkImgVK {
+    background-image: url(../../../../pics/upButton.png);
+}
+
+.linkImgWU {
+    background-image: url(../../../../pics/upButton.png);
+}
+
+.linkImgTG {
+    background-image: url(../../../../pics/upButton.png);
+}
+
+.link {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.linkDescriptionBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkDescription {
+    font-size: 2rem;
+    color: #232e21;
+}
