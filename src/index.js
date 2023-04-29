@@ -8,4 +8,4 @@ root.render(
     <App />
 );
 
-setTimeout(setAppearance, 0);
+// setTimeout(setAppearance, 0);

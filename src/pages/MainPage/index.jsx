@@ -8,8 +8,13 @@ import About from "../../components/About";
 import Reviews from "../../components/Reviews";
 import Layout from "../../components/Layout";
 import Links from "../../components/Links";
+import { useEffect } from "react";
+import setAppearance from "../../animations/appearance/appearance";
 
 const MainPage = () => {
+    useEffect(() => {
+        setAppearance();
+    }, [])
     return (
         <Layout>
             <div className="generalBox">

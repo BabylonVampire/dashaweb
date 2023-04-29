@@ -6,10 +6,11 @@ const setAppearance = () => {
             }
         });
     }
-    
+
     let options = {
         threshold: [0.5]
     };
+
     let observer = new IntersectionObserver(onEntry, options);
     let elements = document.querySelectorAll('.element-animation');
     
